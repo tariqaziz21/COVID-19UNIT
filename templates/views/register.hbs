@@ -1,0 +1,56 @@
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> Register</title>
+  <link rel="stylesheet" href="css/newStyle.css">
+</head>
+
+<body>
+
+
+
+
+  <div class="login-box">
+    <h1>Register</h1>
+
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="card">
+          <div class="card-body">
+
+            <!-- Makes POST request to /login route -->
+            <form action="/register" method="POST">
+
+
+              <div class="textbox">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username" name="username">
+              </div>
+              <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" name="password">
+              </div>
+              <button type="submit" class="btn btn-dark">Register</button>
+            </form>
+
+
+          </div>
+        </div>
+
+        <!-- <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <a class="btn btn-block" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Sign In with Google
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+      </div>
+    </div>
+</body>
+
+</html>

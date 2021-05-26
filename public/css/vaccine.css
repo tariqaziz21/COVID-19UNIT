@@ -1,0 +1,27 @@
+body{
+  background-image:url("https://www.district4health.org/wp-content/uploads/2020/12/D4-COVID-vaccine.jpg");
+  background-position:center;
+  background-size:cover;
+
+  font-family:sans-serif;
+  margin-top:0px;
+
+}
+
+.regvac{
+  width:800px;
+    background-color:rgb(0,0,0,6);
+  margin: 0;
+  color:#ffffff;
+
+  text-align:center;
+  border-radius: 15px 15px 0px 0px;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+.new{
+  background-color:rgb(0,0,0,0.5);
+
+
+}

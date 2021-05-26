@@ -1,0 +1,58 @@
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<!-- aos js file cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- custom js link  -->
+<!-- <script src="views/script.js"></script> -->
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+
+  $('.fa-bars').click(function(){
+    $(this).toggleClass('fa-times');
+    $('.nav').toggleClass('nav-toggle');
+  });
+
+  $(window).on('load scroll',function(){
+
+    $('.fa-bars').removeClass('fa-times');
+    $('.nav').removeClass('nav-toggle');
+
+    if($(window).scrollTop() > 10){
+      $('header').addClass('header-active');
+    }else{
+      $('header').removeClass('header-active');
+    }
+
+  });
+
+  $('.facility').magnificPopup({
+    delegate:'a',
+    type:'image',
+    gallery:{
+      enabled:true
+    }
+  });
+
+});
+
+
+</script>
+
+<script>
+
+AOS.init({
+    duration:1000,
+    delay:400
+});
+
+</script>
+</body>
+</html>
